@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #009142;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00682f;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #00321e;
+}
+::-webkit-scrollbar-track {
+  background: #eaeaea;
+}
+::-webkit-scrollbar-track:hover {
+  background: #eaeaea;
+}
+::-webkit-scrollbar-track:active {
+  background: #eaeaea;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+.App {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+  .header
+  {
+    display: flex;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 999999;
+    top:0;
+    left:0;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15vw;
+
+    img {
+     height: 8vh;
+    }
+
+    ul.menu
+    {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      li{
+        display: inline-block;
+        a{
+          text-decoration: none;
+          color: #FFFFFF;
+          padding: 0 10px;
+          font-size: 16px;
+          transition: .3s;
+
+          &:hover{
+            color: #009142;
+          }
+        }
+      }
+    }
+  }
+
+  .banner{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./assets/banner1.jpg');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .description{
+      color: #FFFFFF;
+      font-family: Oswald,sans-serif;
+      padding: 0 15vw;
+
+      h1 {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #009142;
+      }
+
+      p{
+        margin:0;
+        font-weight: 400;
+        font-size: 75px;
+        line-height: 1.10;
+        span{
+          color: #009142;
+        }
+      }
+
+      a {
+        background-color: #009142;
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 20px 50px;
+        display: inline-block;
+        border-radius: 100px;
+        margin: 20px 0;
+        transition: .5s;
+        letter-spacing: 2px;
+
+        &:hover{
+          background-color: #45476f;
+        }
+      }
+    }
+  }
+
+  #about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10vh 0;
+    text-align: justify;
+
+    div {
+      max-width: 45vw;
+    }
+
+    .img-sobre{
+      background-image: url('./assets/banner3.jpg');
+      width: 40vw;
+      height: 40vw;
+      border: 10px solid #009142;
+      border-width: 10px 10px 20px 20px;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 50%;
+    }
+
+    h3 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      font-size: 13px;
+      color: #333;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    h2 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 1.29;
+      font-family: Oswald,sans-serif;
+      letter-spacing: 0;
+      text-align: inherit;
+      color: #45476f;
+      margin: 0;
+    }
+
+    img {
+      width: 40vw;
+      height: 40vw;
+      border: 7px solid #009142;
+      border-radius: 50%;
+    }
+  }
+
+  #produtos {
+    min-height: 100vh;
+    padding: 10vh 0;
+    text-align: center;
+
+    h3 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      font-size: 13px;
+      color: #333;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    h2 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 1.29;
+      font-family: Oswald,sans-serif;
+      letter-spacing: 0;
+      text-align: inherit;
+      color: #45476f;
+      margin: 0 0 5vh 0;
+    }
+
+    .grid {
+      display: flex;
+      margin: 0 auto;
+      width: 80%;
+
+
+      .grid-item{
+        flex: 1;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+
+        & > div {
+          background-size: cover;
+          display: flex;
+          background-position: center center;
+          width: 90%;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          transform: scale(1);
+          transition: .5s;
+          align-items: flex-end;
+          justify-content: flex-start;
+
+          p {
+            color: #FFFFFF;
+            font-family: Oswald, sans-serif;
+            font-size: 30px;
+            margin: 20px 0;
+            text-align: left;
+            line-height: 1;
+            text-transform: capitalize;
+            padding: 10px 35px 10px 35px;
+            background-color: #009142;
+            opacity: 0.9;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+
+            span {
+              display: block;
+              font-size: 20px;
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            }
+          }
+
+          &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+          }
+          
+          &.half {
+            height: 47vh;
+          }
+
+          &.full {
+            height: 100vh;
+          }
+        }
+      }
+    }
+
+    .slider
+    {
+      width: 80%;
+      margin: 10vh auto;
+
+      .slide-item {
+        width: 90% !important;
+        color: #FFFFFF;
+        border-radius: 35px;
+        text-align: center;
+        transition: .3s;
+        opacity: 0.7;
+        padding: 20px;
+
+        h3 {
+          font-size: 18px;
+          color: #FFF;
+          font-family: "Oswald", sans-serif;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+
+        img {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+
+        &.green{
+          background-color: #009142;
+        }
+
+        &.purple{
+          background-color: #c34770;
+        }
+
+        &.yellow{
+          background-color: #e9cb3c;
+        }
+      }
+    }
+
+  }
+
+  #newsletter{
+    background-image: url('./assets/banner3.jpg');
+    width: 100vw;
+    min-height: 60vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    .content {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #FFF;
+
+      h3 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-size: 13px;
+        color: #FFF;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 0;
+      }
+
+      h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 1.29;
+        font-family: Oswald,sans-serif;
+        letter-spacing: 0;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0 0 0 0;
+      }
+
+      p {
+        text-align: center;
+        max-width: 95%;
+      }
+
+      input {
+        text-align: center;
+        border: 0;
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+      }
+
+      button {
+        background-color: #009142;
+        width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        border: 0;
+        color: #FFFFFF;
+        margin: 5px 0;
+        cursor: pointer;
+      }
+
+      .error {
+        color: #ff0000;
+      }
+
+      .success {
+        color: #009142;
+      }
+    }
+
+
+    &:before{
+      content: '';
+      position: absolute;
+      background-color: rgba(0,0,0, 0.5);
+      width: 100%;
+      height: 100%;
+      z-index:0;
+      pointer-events: none;
+    }
+  }
+
+  #contato
+  {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 10vh 0;
+    background-color: #FFFFFF;
+    position: relative;
+    &:after{
+      content: ' ';
+      height: 400px;
+      width: 100%;
+      position: absolute;
+      background-image: url('./assets/separator.jpg');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      bottom: 0;
+      left: 0;
+      pointer-events:none;
+      z-index: 0;
+    }
+
+    h3 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      font-size: 13px;
+      color: #333;
+      font-weight: 200;
+      text-align: center;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    h2 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 1.29;
+      font-family: Oswald,sans-serif;
+      letter-spacing: 0;
+      text-align: center;
+      color: #45476f;
+      margin: 0 0 5vh 0;
+    }
+  }
+
+  form {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index:1;
+
+    label{
+      margin-top: 20px;
+    }
+
+    input, textarea{
+      border: 0;
+      border-bottom: 1px dotted #888888;
+      height: 60px;
+    }
+
+    textarea{
+      resize: none;
+      height: 100px;
+    }
+
+    button {
+      margin: 20px 0;
+      background-color: #009142;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding: 20px 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border: 0;
+      border-radius: 100px;
+      cursor: pointer;
+
+      &:disabled{
+        cursor: not-allowed;
+        opacity: .8;
+        pointer-events: none;
+      }
+    }
+
+    .error {
+      color: #FF0000;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .success{
+      color: #009142;
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+
+  .footer {
+    width: 100vw;
+    height: 85px;
+    border-top: 7px solid #009142;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c222b;
+    color: #FFF;
+  }
+
+}
+
+@media (max-width: 991px)
+{
+  .App{
+    .header{
+      justify-content: center;
+      ul.menu
+      {
+        display:none;
+      }
+    }
+
+    .banner{
+      justify-content: center;
+      .description{
+        text-align: center;
+        p {
+          font-size: 50px;
+        }
+      }
+    }
+
+    #about{
+      flex-direction: column;
+      div {
+        max-width: 90vw;
+      }
+
+      .img-sobre{
+        width: 90vw;
+        height: 90vw;
+      }
+    }
+
+    #produtos{
+      .grid{
+        width: 100%;
+        display: block;
+        .grid-item{
+          padding-bottom: 30px;
+          pointer-events: none;
+        }
+      }
+
+      .slider{
+        display: none;
+      }
+    }
+
+    #contato{
+      form{
+        width: 90%;
+      }
+    }
+  }
+}
