@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/joverduras/static/css/main.3294b078.chunk.css",
+    "main.js": "/joverduras/static/js/main.4564f872.chunk.js",
+    "main.js.map": "/joverduras/static/js/main.4564f872.chunk.js.map",
+    "runtime~main.js": "/joverduras/static/js/runtime~main.c18cb5d5.js",
+    "runtime~main.js.map": "/joverduras/static/js/runtime~main.c18cb5d5.js.map",
+    "static/css/2.e7851710.chunk.css": "/joverduras/static/css/2.e7851710.chunk.css",
+    "static/js/2.6ea9d92a.chunk.js": "/joverduras/static/js/2.6ea9d92a.chunk.js",
+    "static/js/2.6ea9d92a.chunk.js.map": "/joverduras/static/js/2.6ea9d92a.chunk.js.map",
+    "index.html": "/joverduras/index.html",
+    "precache-manifest.126defa740e0012e9278ab4c7cc0a6d5.js": "/joverduras/precache-manifest.126defa740e0012e9278ab4c7cc0a6d5.js",
+    "service-worker.js": "/joverduras/service-worker.js",
+    "static/css/2.e7851710.chunk.css.map": "/joverduras/static/css/2.e7851710.chunk.css.map",
+    "static/css/main.3294b078.chunk.css.map": "/joverduras/static/css/main.3294b078.chunk.css.map",
+    "static/media/App.scss": "/joverduras/static/media/separator.0ef5dd69.jpg",
+    "static/media/banner2.jpg": "/joverduras/static/media/banner2.70884ac2.jpg",
+    "static/media/img1.jpg": "/joverduras/static/media/img1.3d33d101.jpg",
+    "static/media/img4.jpg": "/joverduras/static/media/img4.1667a67d.jpg",
+    "static/media/logow.png": "/joverduras/static/media/logow.f15c577b.png",
+    "static/media/slider.scss": "/joverduras/static/media/slick.f97e3bbf.svg"
+  }
+}
