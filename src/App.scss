@@ -143,7 +143,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 10vh 0;
+    padding: 15vh 0 0;
     text-align: justify;
 
     div {
@@ -192,7 +192,7 @@
 
   #produtos {
     min-height: 100vh;
-    padding: 10vh 0;
+    padding: 15vh 0 0;
     text-align: center;
 
     h3 {
@@ -331,7 +331,7 @@
   #newsletter{
     background-image: url('./assets/banner3.jpg');
     width: 100vw;
-    min-height: 60vh;
+    min-height: 100vh;
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -418,7 +418,7 @@
   {
     width: 100vw;
     min-height: 100vh;
-    padding: 10vh 0;
+    padding: 15vh 0 0;
     background-color: #FFFFFF;
     position: relative;
     &:after{
