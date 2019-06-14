@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9717e1238932640bb6a350a9a5027c5e",
+    "revision": "2e34a5ff45ee8c6f515cbea1d21350b6",
     "url": "/joverduras/index.html"
   },
   {
-    "revision": "b5e94bedf0266cc04189",
-    "url": "/joverduras/static/css/2.e7851710.chunk.css"
+    "revision": "43a38bf8daa5a7b243e6",
+    "url": "/joverduras/static/css/2.fa78e4c9.chunk.css"
   },
   {
-    "revision": "3dc0b07dd63d53184441",
+    "revision": "16c748325b5133b56e3f",
     "url": "/joverduras/static/css/main.dda45cbe.chunk.css"
   },
   {
-    "revision": "b5e94bedf0266cc04189",
-    "url": "/joverduras/static/js/2.6ea9d92a.chunk.js"
+    "revision": "43a38bf8daa5a7b243e6",
+    "url": "/joverduras/static/js/2.696f0bb4.chunk.js"
   },
   {
-    "revision": "3dc0b07dd63d53184441",
-    "url": "/joverduras/static/js/main.4564f872.chunk.js"
+    "revision": "16c748325b5133b56e3f",
+    "url": "/joverduras/static/js/main.0e3cb823.chunk.js"
   },
   {
     "revision": "1865cfb10e77e3a1bb8d",
